@@ -1,5 +1,5 @@
 # WinStarDate.Avalonia
-# WinStarDateXamarin
+
 This product is a version for androidm, windows and gnu/linux of FitStarDate app for fitbit.
 
 It allows to calculate the stellar date froma an actual gregorian date, it saves locally date inserted and data are not stored on any internet database.

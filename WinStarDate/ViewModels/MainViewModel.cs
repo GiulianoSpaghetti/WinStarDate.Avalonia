@@ -1,7 +1,5 @@
 ﻿using System.IO;
 using System;
-using WinDateFrom;
-using DynamicData.Kernel;
 
 namespace WinStarDate.ViewModels;
 
@@ -35,8 +33,8 @@ public class MainViewModel : ViewModelBase
         string s = file.ReadToEnd();
         file.Close();
         o = Newtonsoft.Json.JsonConvert.DeserializeObject<Opzioni>(s);
-        if (o==null)
-        { 
+        if (o == null)
+        {
             DateTime d = DateTime.Now;
             o = new Opzioni();
             o.day = d.Day;
@@ -65,13 +63,13 @@ public class MainViewModel : ViewModelBase
     public static int GetAnno() { return o.year; }
     public static String calcola(DateTimeOffset? d)
     {
-        DateTime data = ((DateTimeOffset) d).UtcDateTime.ToUniversalTime();
+        DateTime data = ((DateTimeOffset)d).UtcDateTime.ToUniversalTime();
         int i = int.Parse(data.ToString("dd"));
         String s;
         if (i < 10)
             s = $"0{i}";
         else
             s = $"{i}";
-       return $"{data.ToString("yy")}{data.ToString("MM")}.{s}";
+        return $"{data.ToString("yy")}{data.ToString("MM")}.{s}";
     }
 }

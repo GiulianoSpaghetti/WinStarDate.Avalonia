@@ -29,6 +29,6 @@
 		<Button x:Name="calcola" Click="calcola_Click" Foreground="White" Grid.Row="1" Grid.Column="1">Calcola</Button>
 		<Label x:Name="risultato" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Foreground="White"/>
 		<TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Foreground="White">Questa app vuole essere un rifacimento in avalonia 11 della app WinStarDate in xamarin</TextBlock>
-		<TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Foreground="White">ⓒ Giulio Sorrentino 2023 some right reserved. Questa app è sotto GPLv3 o, secondo la propria personale opinione, qualsiasi versione successiva.</TextBlock>	
+		<TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Foreground="White">ⓒ Giulio Sorrentino 2023 some right reserved. Questa app è sotto GPLv3 o, secondo la propria personale opinione, qualsiasi versione successiva.</TextBlock>
 	</Grid>
 </UserControl>
